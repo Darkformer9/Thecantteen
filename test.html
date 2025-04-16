@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title align="center">Rameshwar Nath Canteen Login</title>
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="login-container">
+        <h1 class="canteen-name">Rameshwar Nath Canteen</h1>
+        <form action="/login" method="post" class="login-form">
+            <label for="user-role">Select Role:</label>
+            <select id="user-role" name="user-role">
+                <option value="manager">Canteen Manager</option>
+                <option value="owner">Owner</option>
+                <option value="data-entry">Data Entry Operator</option>
+                <option value="staff">Staff</option>
+            </select>
+
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" placeholder="Enter Username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter Password" required>
+
+            <button type="submit" class="login-button">Login</button>
+        </form>
+        <div class="register-link">
+            <p>Not registered? <a href="/register">Click here to register</a></p>
+        </div>
+    </div>
+    <!-- Link to JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
